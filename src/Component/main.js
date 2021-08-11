@@ -76,7 +76,7 @@ class Main extends React.Component {
 
                 return <HornedBeast
                     // selectelemnt={this.state.selectedimg}
-                    index={index}
+                    key={index}
                     titel={element.title}
                     imageUrl={element.image_url}
                     discription={element.description}
