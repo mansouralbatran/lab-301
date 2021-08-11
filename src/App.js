@@ -7,6 +7,7 @@ import Footer from './Component/footer';
 
 
 class App extends React.Component {
+  
   render(){
     return (
       <>
@@ -14,10 +15,7 @@ class App extends React.Component {
       <Header/>
       <Main/>
       <Footer/>
-      
       </>
-      
-      
       )
     }
  
