@@ -16,14 +16,17 @@ class HornedBeast extends React.Component {
     }
 
 
-
+    showfunction = () =>{
+             this.props.showfunction(this.props.titel)
+    }
     render() {
 
 
         return (
 
             <>
-                <Card style={{ width: '18rem' }}>
+        
+                <Card onClick={this.showfunction}style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={this.props.imageUrl} alt="" />
                     <Card.Body>
                         <Card.Title>{this.props.titel}</Card.Title>
@@ -33,19 +36,11 @@ class HornedBeast extends React.Component {
                         <Button onClick={this.increasnumber} variant="primary"> voit to </Button>
                     </Card.Body>
                 </Card>
+             
 
 
 
-
-
-
-                {/* <h2> {this.props.titel } </h2>
-
-            <img  onClick={this.increasnumber} src={this.props.imageUrl } alt ={this.props.titel} titel ={this.props.titel}/>
-
-           <p> {this.props.discription } </p>
-
-           <p> NUMBER OF TRAK ={this.state.number}</p> */}
+               
 
             </>
 
@@ -53,4 +48,4 @@ class HornedBeast extends React.Component {
     }
 };
 
-export default HornedBeast;
+export default HornedBeast
